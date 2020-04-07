@@ -23,7 +23,6 @@ services:
             - DISABLE_HTTPS
             - JICOFO_AUTH_USER
             - LETSENCRYPT_DOMAIN
-            - LETSENCRYPT_EMAIL
             - PUBLIC_URL
             - XMPP_DOMAIN
             - XMPP_AUTH_DOMAIN
