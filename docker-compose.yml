@@ -12,6 +12,13 @@ services:
             - ${CONFIG}/web:/config:Z
             - ${CONFIG}/transcripts:/usr/share/jitsi-meet/transcripts:Z
         environment:
+            # for the nginx proxy
+            - VIRTUAL_HOST
+            - VIRTUAL_PORT
+            - VIRTUAL_PROTO
+            - LETSENCRYPT_HOST
+            - LETSENCRYPT_EMAIL 
+            # the rest
             - ENABLE_LETSENCRYPT
             - ENABLE_HTTP_REDIRECT
             - ENABLE_HSTS
